@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Owl Youtube Video Zoom",
+  "version": "1.0",
+
+
+  "description": "Zoom Youtube Videos ",
+
+  "icons": {
+  "48": "icons/OwlZoom-48.png",
+  "96": "icons/OwlZoom-96.png"
+},
+
+  "content_scripts": [
+     {  
+           "matches": ["*://*.youtube.com/watch?v=*"],
+           "js":["OwlZoom.js"]
+
+      }
+    ]
+}
