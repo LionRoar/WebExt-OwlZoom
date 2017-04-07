@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "OwlZoom",
+  "version": "2.0",
+
+
+  "description": "Zoom+ in Youtube Videos!",
+
+  "icons": {
+  "48": "icons/OwlZoom-48.png",
+  "96": "icons/OwlZoom-96.png"
+},
+
+  "content_scripts": [
+     {  
+           "matches": ["*://*.youtube.com/watch?v=*"],
+           "js":["jquery-3.2.0.min.js","jquery-ui.js","OwlZoomV2.js"]
+
+      }
+    ]
+}
